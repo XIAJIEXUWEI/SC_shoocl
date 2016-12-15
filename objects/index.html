@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <script src="../js/mui.min.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		
+	</head>
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		    <!-- 侧滑导航根容器 -->
+		    <div class="mui-off-canvas-wrap mui-draggable">
+		        <!-- 主页面容器 -->
+		        <div class="mui-inner-wrap">
+		            <!-- 菜单容器 -->
+		            <aside class="mui-off-canvas-left" id="offCanvasSide">
+		                <div class="mui-scroll-wrapper" style="background-color: #FAFAFA;">
+		                    <div class="mui-scroll" >
+		                        <!-- 菜单具体展示内容 -->
+		                        <div class="ce-content">
+		                        	<div class="top">
+		                        	</div>
+		                        	<div class="ce-img">
+		                        		<img src="../images/cela-assets/topbg.png"/>
+		                        	</div>
+		                        	<div class="ce-top">
+		                        		<h4>维维一笑</h4>
+		                        		<p>成都东软学院</p>
+		                        	</div>	
+		                        	<div class="ce-top-bottom">
+		                        		
+		                        	</div>
+		                        	<div class="rool">
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/To.png"/><span>上传通告</span></p>
+		                        		</div>
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/SC.png"/><span>我的发布</span></p>
+		                        		</div>
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/GU.png"/><span>我的关注</span></p>
+		                        		</div>
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/dool.png"/><span>我的评论</span></p>
+		                        		</div>
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/back.png"/><span>反馈</span></p>
+		                        		</div>
+		                        		<div class="rool-nei">
+		                        			<p><img src="../images/cela-assets/set.png"/><span>设置</span></p>
+		                        		</div>
+		                        	</div>
+		                        	<button type="button" class="mui-btn mui-btn-blue">退出登录</button>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </aside>
+		            <!-- 主页面标题 -->
+		            <header class="mui-bar mui-bar-nav">
+		                <a class="mui-icon " href="#offCanvasSide"><img src="../images/cela-assets/topbg.png" height="30px" style="float: left;clear: all;"/></a>
+		                <h1 class="mui-title">通告</h1>
+		            </header>
+		           
+		            <!--<nav class="mui-bar mui-bar-tab">
+		    		    <a class="mui-tab-item mui-active">
+		    		        <span class="mui-icon mui-icon-home"></span>
+		    		        <span class="mui-tab-label">首页</span>
+		    		    </a>
+		    		    <a class="mui-tab-item">
+		    		        <span class="mui-icon mui-icon-phone"></span>
+		    		        <span class="mui-tab-label">电话</span>
+		    		    </a>
+		    		    <a class="mui-tab-item">
+		    		        <span class="mui-icon mui-icon-email"></span>
+		    		        <span class="mui-tab-label">邮件</span>
+		    		    </a>
+		    		     
+		    		</nav>-->
+		            <!-- 主页面内容容器 -->
+		            <div class="mui-content mui-scroll-wrapper">
+		                <div class="mui-scroll">
+		                    <!-- 主界面具体展示内容 -->
+		                <div class="content">
+		            	    <div class="head">
+		            		    <p><img src="../images/cela-assets/topbg.png"/>通知<a id="icon-more"><span class="mui-icon mui-icon-more"></span></a></p>
+		            	    </div>
+		                </div>
+		                </div>
+		            </div>
+		       	 <div class="mui-off-canvas-backdrop"></div>
+		        </div>
+		    </div>
+	</body>
+</html>
