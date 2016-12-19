@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/mui.css" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/school.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">班级</h1>
+			<span id="submit">确定</span>
+		</header>
+		<div class="mui-input-row">
+			<label></label>
+			<input type="text" class="mui-input-clear" placeholder="请在此输入班级" id="banji" >
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script>
+			var $submit=$("#submit");
+			$submit.click(function  () {
+				var banji=$("#banji")[0].value;
+				var url="index.html?banji="+banji;
+				window.location.href=(encodeURI(url));
+			})
+		</script>
+	</body>
+</html>

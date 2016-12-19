@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/mui.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人资料</h1>
+		</header>
+		<form class="all">
+			<div class="header unify">
+				<div>头像</div>
+				<img src="xintu/denglu/denglu-assets/tuoyuan.png" />
+			</div>
+			<div class="user unify">
+				用户ID
+				<span class="right">漫长七年&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="user unify">
+				性别
+				<span class="right" id="sex"><font>女</font>&nbsp;&nbsp;
+					<img src="xintu/zhaohuimima/zhaohumima-assets/xiangxia.png" />
+				</span>
+			</div>
+			<div class="user unify">
+				出生日期
+				<span class="right" id="birthday"><font>1997-04-28</font>&nbsp;&nbsp;
+					<img src="xintu/zhaohuimima/zhaohumima-assets/xiangxia.png" />
+				</span>
+			</div>
+			<div class="user unify">
+				学校
+				<span class="right" id="school"><font >成都东软</font>&nbsp;&nbsp;
+					<img src="xintu/zhaohuimima/zhaohumima-assets/xiangxia.png" />
+				</span>
+			</div>
+			<div class="user unify">
+				院系
+				<span class="right" id="faculty"><font>计科系</font>&nbsp;&nbsp;
+					<img src="xintu/zhaohuimima/zhaohumima-assets/xiangxia.png" />
+				</span>
+			</div>
+			<div class="user unify">
+				专业班级
+				<span class="right" id="class"><font>计算机网络</font>&nbsp;&nbsp;
+					<img src="xintu/zhaohuimima/zhaohumima-assets/xiangxia.png" />
+				</span>
+			</div>
+		</form>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			var $sex = $("#sex");
+			var $bir = $("#birthday");
+			var $sch = $("#school");
+			var $fac = $("#faculty");
+			var $cla = $("#class");
+			$(function() {
+				var result = decodeURI(location.search);
+				result = result.substring(1);
+				var index = result.split("=");
+				//console.log("index  "+index[0]+"  and  "+index[1]);
+				switch(index[0]) {
+					case 'school':
+						//						$sch.html(index[1]+"&nbsp;&nbsp;<img src='xintu/zhaohuimima/zhaohumima-assets/xiangxia.png'/>");
+						$sch.children("font").html(index[1]);
+						break;
+					case 'birthday':
+						$bir.children("font").html(index[1]);
+						break;
+					case 'banji':
+						$cla.children("font").html(index[1]);
+						break;
+					case 'faculty':
+						$fac.children("font").html(index[1]);
+						break;
+					default:
+						break;
+				}
+				$bir.click(function() {
+					window.location.href = "birthday.html?";
+					return;
+				});
+				$sch.click(function() {
+					window.location.href = "school.html";
+					return;
+				});
+				$cla.click(function() {
+					window.location.href = "class.html";
+					return;
+				});
+				$fac.click(function() {
+					window.location.href = "faculty.html";
+					return;
+				});
+//				window.addEventListener("fresh",function  (e) {
+//					
+//					var index = e.detail.index;
+//					var value = e.detail.value;
+//					switch(index) {
+//					case 'school':
+//						//						$sch.html(index[1]+"&nbsp;&nbsp;<img src='xintu/zhaohuimima/zhaohumima-assets/xiangxia.png'/>");
+//						$sch.children("font").html(value);
+//						break;
+//					case 'birthday':
+//						$bir.children("font").html(value);
+//						break;
+//					case 'banji':
+//						$cla.children("font").html(value);
+//						break;
+//					case 'faculty':
+//						$fac.children("font").html(value);
+//						break;
+//					default:
+//						break;
+//				}
+//				})
+			});
+		</script>
+	</body>
+
+</html>

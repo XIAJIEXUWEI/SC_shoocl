@@ -1,0 +1,43 @@
+html body{
+	background-color: white;
+}
+.mui-bar {
+	height: 44px;
+    position: relative;
+    background-color: #35A0F0;
+}
+.mui-bar-nav.mui-bar .mui-icon {
+    color: white;
+    font-size: 26px;
+}
+.mui-bar .mui-title {
+    color: white;
+    font-size: 20px;
+    line-height: 44px;
+}
+.mui-bar span{
+	float: right;
+	color: white;
+	line-height: 44px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+.cha {
+    float: right;
+    color: #D8D8D8;
+	line-height: 44px;
+	margin-right: 20px;
+}
+.mui-input-row label {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.1;
+    float: left;
+    padding: 0;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+    float: right;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 20px;
+    border-bottom: 1px solid #D5D5D5;
+}

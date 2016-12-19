@@ -1,0 +1,24 @@
+html body{
+	background-color: white;
+}
+.mui-bar {
+	height: 44px;
+    position: relative;
+    background-color: #35A0F0;
+}
+.mui-bar-nav.mui-bar .mui-icon {
+    color: white;
+    font-size: 26px;
+}
+.mui-bar .mui-title {
+    color: white;
+    font-size: 20px;
+    line-height: 44px;
+}
+.mui-bar span{
+	float: right;
+	color: white;
+	line-height: 44px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
